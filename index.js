@@ -31,6 +31,10 @@ const app = feathers()
 
 app.use('/games', service({
   Model: Game,
+  paginate: {
+    default: 30,
+    max: 50
+  }
 }));
 
 // A basic error handler, just like Express
