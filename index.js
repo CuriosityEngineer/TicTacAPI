@@ -37,6 +37,14 @@ app.use('/games', service({
   }
 }));
 
+app.use('/tiles', service({
+  Model: Tile,
+  paginate: {
+    default: 30,
+    max: 50
+  }
+}));
+
 // A basic error handler, just like Express
 // app.use(errors.handler());
 
