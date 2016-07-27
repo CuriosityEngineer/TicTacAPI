@@ -10,6 +10,7 @@ const service = require('feathers-mongoose');
 
 // Require your models
 const Game = require('./models/game');
+const Tile = require('./models/tile');
 
 // Tell mongoose to use native promises
 // See http://mongoosejs.com/docs/promises.html
